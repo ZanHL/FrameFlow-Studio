@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parent
 api_port=os.environ.get('PORT','4173');ui_port=os.environ.get('STUDIO_UI_PORT','4180')
 python=Path(os.environ.get('STUDIO_PYTHON', ROOT/'.venv/bin/python'))
 api_python=python if os.environ.get('STUDIO_PYTHON') else ROOT/'.venv-api/bin/python'
-if not python.exists() or not api_python.exists():raise SystemExit('请先运行 ./video-studio/install-quick.sh')
+if not python.exists() or not api_python.exists():raise SystemExit('请先运行 ./install-quick.sh')
 processes=[]
 def stop(*args):
  for p in processes:
