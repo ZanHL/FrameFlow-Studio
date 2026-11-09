@@ -1,0 +1,971 @@
+{
+  "openai": {
+    "name": "OpenAI",
+    "base": "https://api.openai.com/v1",
+    "protocol": "compatible",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.4",
+          "name": "GPT-5.4",
+          "vision": true
+        },
+        {
+          "id": "gpt-5.4-mini",
+          "name": "GPT-5.4 mini",
+          "vision": true
+        },
+        {
+          "id": "gpt-5.2",
+          "name": "GPT-5.2",
+          "vision": true
+        },
+        {
+          "id": "gpt-5.3-codex",
+          "name": "GPT-5.3 Codex（Responses）",
+          "vision": true,
+          "api": "responses"
+        }
+      ],
+      "artist": [
+        {
+          "id": "gpt-image-2",
+          "name": "GPT Image 2",
+          "vision": true
+        },
+        {
+          "id": "gpt-image-2.5-flare",
+          "name": "GPT Image 2.5 Flare",
+          "vision": true
+        },
+        {
+          "id": "gpt-image-2.5-sunburst",
+          "name": "GPT Image 2.5 Sunburst",
+          "vision": true
+        }
+      ]
+    },
+    "region": "国外"
+  },
+  "anthropic": {
+    "name": "Anthropic",
+    "base": "https://api.anthropic.com/v1",
+    "protocol": "anthropic",
+    "models": {
+      "director": [
+        {
+          "id": "claude-sonnet-5-5",
+          "name": "Claude Sonnet 5.5",
+          "vision": true
+        },
+        {
+          "id": "claude-opus-5-5",
+          "name": "Claude Opus 5.5",
+          "vision": true
+        },
+        {
+          "id": "claude-haiku-5-5",
+          "name": "Claude Haiku 5.5",
+          "vision": true
+        }
+      ]
+    },
+    "region": "国外"
+  },
+  "volcengine": {
+    "name": "火山方舟（北京）",
+    "base": "https://ark.cn-beijing.volces.com/api/v3",
+    "protocol": "ark",
+    "models": {
+      "animator": [
+        {
+          "id": "doubao-seedance-2-5-260628",
+          "name": "Doubao-Seedance-2.5",
+          "vision": false,
+          "min_duration": 4,
+          "max_duration": 30,
+          "resolutions": [
+            "480p",
+            "720p"
+          ]
+        },
+        {
+          "id": "doubao-seedance-2-0-mini-260615",
+          "name": "Doubao-Seedance-2.0-mini",
+          "vision": false,
+          "min_duration": 4,
+          "max_duration": 15,
+          "resolutions": [
+            "480p",
+            "720p"
+          ]
+        },
+        {
+          "id": "doubao-seedance-2-0-fast-260128",
+          "name": "Doubao-Seedance-2.0-fast",
+          "vision": false,
+          "min_duration": 4,
+          "max_duration": 15,
+          "resolutions": [
+            "480p",
+            "720p"
+          ]
+        },
+        {
+          "id": "doubao-seedance-2-0-260128",
+          "name": "Doubao-Seedance-2.0",
+          "vision": false,
+          "min_duration": 4,
+          "max_duration": 15,
+          "resolutions": [
+            "480p",
+            "720p"
+          ]
+        },
+        {
+          "id": "doubao-seedance-1-0-pro-fast-251015",
+          "name": "Doubao-Seedance-1.0-pro-fast",
+          "vision": false,
+          "min_duration": 2,
+          "max_duration": 12,
+          "last_frame": false,
+          "deprecated": true,
+          "note": "仅支持首帧驱动，无法指定尾帧",
+          "resolutions": [
+            "480p",
+            "720p"
+          ]
+        },
+        {
+          "id": "doubao-seedance-1-0-pro-250528",
+          "name": "Doubao-Seedance-1.0-pro",
+          "vision": false,
+          "min_duration": 2,
+          "max_duration": 12,
+          "deprecated": true,
+          "resolutions": [
+            "480p",
+            "720p"
+          ]
+        }
+      ],
+      "artist": [
+        {
+          "id": "doubao-seedream-5-0-flash-260915",
+          "name": "Doubao-Seedream-5.0-flash",
+          "vision": false
+        },
+        {
+          "id": "doubao-seedream-5-0-pro-260628",
+          "name": "Doubao-Seedream-5.0-pro",
+          "vision": false
+        },
+        {
+          "id": "doubao-seedream-5-0-lite-260128",
+          "name": "Doubao-Seedream-5.0-lite",
+          "vision": false,
+          "deprecated": true,
+          "note": "清单中未开通"
+        },
+        {
+          "id": "doubao-seedream-4-5-251128",
+          "name": "Doubao-Seedream-4.5",
+          "vision": false,
+          "deprecated": true,
+          "note": "清单中未开通"
+        },
+        {
+          "id": "doubao-seedream-4-0-250828",
+          "name": "Doubao-Seedream-4.0",
+          "vision": false,
+          "deprecated": true
+        }
+      ],
+      "director": [
+        {
+          "id": "kimi-k3-1-pro-261024",
+          "name": "Kimi-K3.1-Pro",
+          "vision": false
+        },
+        {
+          "id": "deepseek-v4-1-flash-economy-261017",
+          "name": "DeepSeek-V4.1-Flash经济版",
+          "vision": false
+        },
+        {
+          "id": "doubao-seed-2-1-lite-260915",
+          "name": "Doubao-Seed-2.1-lite",
+          "vision": true
+        },
+        {
+          "id": "deepseek-v4-1-flash-261017",
+          "name": "DeepSeek-V4.1-Flash",
+          "vision": false
+        },
+        {
+          "id": "glm-5-3-flash-260828",
+          "name": "GLM-5.3-Flash",
+          "vision": false
+        },
+        {
+          "id": "deepseek-v4-pro-ga-260813",
+          "name": "DeepSeek-V4-Pro正式版",
+          "vision": false
+        },
+        {
+          "id": "deepseek-v4-flash-ga-260731",
+          "name": "DeepSeek-V4-Flash正式版",
+          "vision": false
+        },
+        {
+          "id": "glm-5-2-260617",
+          "name": "GLM-5.2",
+          "vision": false
+        },
+        {
+          "id": "doubao-seed-evolving",
+          "name": "Doubao-Seed-Evolving",
+          "vision": true,
+          "note": "清单中未开通，使用前需到方舟控制台开通"
+        },
+        {
+          "id": "doubao-seed-2-1-turbo-260628",
+          "name": "Doubao-Seed-2.1-turbo",
+          "vision": true
+        },
+        {
+          "id": "doubao-seed-2-0-mini-260428",
+          "name": "Doubao-Seed-2.0-mini",
+          "vision": true
+        },
+        {
+          "id": "doubao-seed-2-0-lite-260428",
+          "name": "Doubao-Seed-2.0-lite",
+          "vision": true
+        },
+        {
+          "id": "doubao-seed-2-1-pro-260915",
+          "name": "Doubao-Seed-2.1-pro",
+          "vision": true
+        },
+        {
+          "id": "deepseek-v4-pro-260425",
+          "name": "DeepSeek-V4-pro",
+          "vision": false,
+          "deprecated": true
+        },
+        {
+          "id": "doubao-seed-2-0-code-preview-260215",
+          "name": "Doubao-Seed-2.0-Code",
+          "vision": false,
+          "deprecated": true
+        },
+        {
+          "id": "doubao-seed-2-0-pro-260215",
+          "name": "Doubao-Seed-2.0-pro",
+          "vision": true,
+          "deprecated": true
+        },
+        {
+          "id": "doubao-seed-character-260628",
+          "name": "Doubao-Seed-Character",
+          "vision": true
+        },
+        {
+          "id": "doubao-seed-translation-250915",
+          "name": "Doubao-Seed-Translation",
+          "vision": false,
+          "note": "翻译专用、上下文较短，不建议作为完整短片导演"
+        }
+      ],
+      "modeler": [
+        {
+          "id": "doubao-seed3d-2-0-260328",
+          "name": "Doubao-Seed3D-2.0",
+          "vision": false
+        },
+        {
+          "id": "hyper3d-gen2-260112",
+          "name": "Hyper3D-Gen2",
+          "vision": false
+        },
+        {
+          "id": "hitem3d-2-0-251223",
+          "name": "Hitem3D-2.0",
+          "vision": false
+        }
+      ]
+    },
+    "region": "国内"
+  },
+  "deepseek": {
+    "name": "DeepSeek",
+    "base": "https://api.deepseek.com",
+    "protocol": "compatible",
+    "region": "国内",
+    "models": {
+      "director": [
+        {
+          "id": "deepseek-flash",
+          "name": "DeepSeek Flash",
+          "vision": true
+        },
+        {
+          "id": "deepseek-v4-pro",
+          "name": "DeepSeek V4 Pro",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "aliyun": {
+    "name": "阿里云百炼 · 北京",
+    "base": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "protocol": "compatible",
+    "region": "国内",
+    "models": {
+      "director": [
+        {
+          "id": "qwen3-vl-plus",
+          "name": "Qwen3 VL Plus",
+          "vision": true
+        },
+        {
+          "id": "qwen-vl-max",
+          "name": "Qwen VL Max",
+          "vision": true
+        },
+        {
+          "id": "qwen-plus",
+          "name": "Qwen Plus",
+          "vision": false
+        },
+        {
+          "id": "qwen-max",
+          "name": "Qwen Max",
+          "vision": false
+        },
+        {
+          "id": "qwen-turbo",
+          "name": "Qwen Turbo",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "zhipu": {
+    "name": "智谱 BigModel",
+    "base": "https://open.bigmodel.cn/api/paas/v4",
+    "protocol": "compatible",
+    "region": "国内",
+    "models": {
+      "director": [
+        {
+          "id": "glm-4.6v",
+          "name": "GLM-4.6V",
+          "vision": true
+        },
+        {
+          "id": "glm-4.6v-flash",
+          "name": "GLM-4.6V Flash",
+          "vision": true
+        },
+        {
+          "id": "glm-5.3",
+          "name": "GLM-5.3",
+          "vision": false
+        },
+        {
+          "id": "glm-5.3-flash",
+          "name": "GLM-5.3 Flash",
+          "vision": true
+        }
+      ]
+    }
+  },
+  "moonshot": {
+    "name": "月之暗面 Kimi · 国内",
+    "base": "https://api.moonshot.cn/v1",
+    "protocol": "compatible",
+    "region": "国内",
+    "models": {
+      "director": [
+        {
+          "id": "kimi-k2.5",
+          "name": "Kimi K2.5",
+          "vision": true
+        }
+      ]
+    }
+  },
+  "google": {
+    "name": "Google AI Studio",
+    "base": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "protocol": "compatible",
+    "region": "国外",
+    "models": {
+      "director": [
+        {
+          "id": "gemini-2.5-flash",
+          "name": "Gemini 2.5 Flash",
+          "vision": true
+        },
+        {
+          "id": "gemini-2.5-pro",
+          "name": "Gemini 2.5 Pro",
+          "vision": true
+        },
+        {
+          "id": "gemini-3.1-pro-preview",
+          "name": "Gemini 3.1 Pro Preview",
+          "vision": true
+        }
+      ]
+    }
+  },
+  "mistral": {
+    "name": "Mistral AI",
+    "base": "https://api.mistral.ai/v1",
+    "protocol": "compatible",
+    "region": "国外",
+    "models": {
+      "director": [
+        {
+          "id": "mistral-small-latest",
+          "name": "Mistral Small",
+          "vision": true
+        },
+        {
+          "id": "mistral-medium-latest",
+          "name": "Mistral Medium",
+          "vision": true
+        },
+        {
+          "id": "mistral-large-latest",
+          "name": "Mistral Large",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "xai": {
+    "name": "xAI · Grok",
+    "base": "https://api.x.ai/v1",
+    "protocol": "compatible",
+    "region": "国外",
+    "models": {
+      "director": [
+        {
+          "id": "grok-4",
+          "name": "Grok 4",
+          "vision": true
+        }
+      ],
+      "artist": [
+        {
+          "id": "grok-imagine-image-2.0",
+          "name": "Grok Imagine Image 2.0",
+          "vision": true
+        }
+      ],
+      "animator": [
+        {
+          "id": "grok-imagine-video-1.5",
+          "name": "Grok Imagine Video 1.5",
+          "vision": true,
+          "resolutions": [
+            "480p",
+            "720p",
+            "1080p"
+          ]
+        }
+      ]
+    }
+  },
+  "muse_spark": {
+    "name": "Muse Spark",
+    "base": "https://api.meta.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "muse-spark-1.3",
+          "name": "muse-spark-1.3",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "minimax": {
+    "name": "MiniMax",
+    "base": "https://api.minimax.io/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "MiniMax-M3",
+          "name": "MiniMax-M3",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "mimo": {
+    "name": "Xiaomi MiMo",
+    "base": "https://api.xiaomimimo.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "mimo-v2.5-pro",
+          "name": "mimo-v2.5-pro",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "iflytek": {
+    "name": "iFlytek Spark (Astron MaaS)",
+    "base": "https://maas-api.cn-huabei-1.xf-yun.com/v2",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "spark-x2.5",
+          "name": "spark-x2.5",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "jalapeno": {
+    "name": "Jalapeno Cloud",
+    "base": "https://api.jalapeno-cloud.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "DeepSeek-V4.1-Flash",
+          "name": "DeepSeek-V4.1-Flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "infistar": {
+    "name": "Infistar",
+    "base": "https://infistar.cc/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-6-luna",
+          "name": "gpt-6-luna",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "shengsuanyun": {
+    "name": "Shengsuan Cloud",
+    "base": "https://router.shengsuanyun.com/api/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "deepseek/deepseek-v4-flash",
+          "name": "deepseek/deepseek-v4-flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "apimart": {
+    "name": "APIMart",
+    "base": "https://api.apimart.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.6-terra",
+          "name": "gpt-5.6-terra",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "aihubmix": {
+    "name": "AIHubMix",
+    "base": "https://aihubmix.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "aimlapi": {
+    "name": "AIML API",
+    "base": "https://api.aimlapi.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "openai/gpt-5-5",
+          "name": "openai/gpt-5-5",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "evolink": {
+    "name": "EvoLink",
+    "base": "https://direct.evolink.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.5",
+          "name": "gpt-5.5",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "openrouter": {
+    "name": "OpenRouter",
+    "base": "https://openrouter.ai/api/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "minimax/minimax-m3:free",
+          "name": "minimax/minimax-m3:free",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "api_route": {
+    "name": "API Route",
+    "base": "https://www.api-route.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "fluxionai": {
+    "name": "Fluxion AI",
+    "base": "https://fluxionai.space/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.5",
+          "name": "gpt-5.5",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "cheaperinference": {
+    "name": "Cheaper Inference",
+    "base": "https://api.cheaperinference.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "requesty": {
+    "name": "Requesty",
+    "base": "https://router.requesty.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "openai/gpt-5.4-mini",
+          "name": "openai/gpt-5.4-mini",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "futureinfra": {
+    "name": "FutureInfra",
+    "base": "https://futureinfra.ai/v1/ai",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "openai/gpt-4o-mini",
+          "name": "openai/gpt-4o-mini",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "yapi": {
+    "name": "Y-API",
+    "base": "https://api.y-api.bestvirtualgoods.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "deepseek/deepseek-v4-flash",
+          "name": "deepseek/deepseek-v4-flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "opper": {
+    "name": "Opper",
+    "base": "https://api.opper.ai/v3/compat",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "onomeo": {
+    "name": "onomeo",
+    "base": "https://onomeo.com/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "auto",
+          "name": "auto",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "empiriolabs": {
+    "name": "EmpirioLabs AI",
+    "base": "https://api.empiriolabs.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "qwen3-8-flash",
+          "name": "qwen3-8-flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "runcrate": {
+    "name": "Runcrate",
+    "base": "https://api.runcrate.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "name": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "cloudgpu": {
+    "name": "CloudGPU",
+    "base": "https://cloudgpu.app/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "deepseek-v4-flash",
+          "name": "deepseek-v4-flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "cheapaimodel": {
+    "name": "cheapaimodel",
+    "base": "https://api.cheapaimodel.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "deepseek-v4-1-flash",
+          "name": "deepseek-v4-1-flash",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "groq": {
+    "name": "Groq",
+    "base": "https://api.groq.com/openai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "openai/gpt-oss-120b",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "pollinations": {
+    "name": "Pollinations AI",
+    "base": "https://gen.pollinations.ai/v1",
+    "protocol": "compatible",
+    "source": "MoneyPrinterTurbo registry snapshot",
+    "models": {
+      "director": [
+        {
+          "id": "openai-fast",
+          "name": "openai-fast",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "openai_codex_cli": {
+    "name": "OpenAI Codex · 本机登录",
+    "base": "",
+    "protocol": "codex_cli",
+    "auth": "cli",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.3-codex",
+          "name": "gpt-5.3-codex",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.4",
+          "name": "gpt-5.4",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.2",
+          "name": "gpt-5.2",
+          "vision": false
+        }
+      ],
+      "artist": [
+        {
+          "id": "gpt-5.3-codex",
+          "name": "gpt-5.3-codex",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.4",
+          "name": "gpt-5.4",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.2",
+          "name": "gpt-5.2",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "openai_codex_api": {
+    "name": "OpenAI Codex · 官方 API",
+    "base": "https://api.openai.com/v1",
+    "protocol": "responses",
+    "models": {
+      "director": [
+        {
+          "id": "gpt-5.3-codex",
+          "name": "gpt-5.3-codex",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.4",
+          "name": "gpt-5.4",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.4-mini",
+          "name": "gpt-5.4-mini",
+          "vision": false
+        },
+        {
+          "id": "gpt-5.2",
+          "name": "gpt-5.2",
+          "vision": false
+        }
+      ]
+    }
+  },
+  "custom": {
+    "name": "自定义兼容接口（OneAPI / New API / 代理）",
+    "base": "",
+    "protocol": "compatible",
+    "custom_endpoint": true,
+    "models": {
+      "director": [
+        {
+          "id": "custom-model",
+          "name": "填写模型 ID",
+          "vision": false
+        }
+      ]
+    }
+  }
+}

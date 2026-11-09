@@ -1,0 +1,17 @@
+.DS_Store
+.venv*/
+.nicegui/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+/tools/
+/MoneyPrinterTurbo/
+/projects/
+/agent/
+video-studio/data/
+video-studio/build/
+video-studio/dist/
+*.egg-info/

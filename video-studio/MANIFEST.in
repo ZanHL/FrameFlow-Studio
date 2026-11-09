@@ -1,0 +1,10 @@
+include *.py *.json *.html *.md
+recursive-include studio *.py
+recursive-include vendor *
+global-exclude __pycache__ *.pyc
+prune data
+prune .venv
+prune .venv-api
+
+recursive-include static *
+recursive-include docs *.md
